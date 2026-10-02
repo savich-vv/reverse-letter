@@ -29,5 +29,6 @@ public class StringReverser {
             }
         }
         return new String(chars);
+//        System.out.println(chars);
     }
 }
