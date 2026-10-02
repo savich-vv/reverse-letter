@@ -22,6 +22,6 @@ public class Main {
                 }
             }
         }
-        System.out.println(new String(chars));
+        System.out.println(new String(chars));                 //работает
     }
 }
