@@ -17,8 +17,8 @@ public class Main {
                 if (!Character.isLetter(chars[left])) {
                     left++;
                 }
-
-
+                if (!Character.isLetter(chars[right])) {
+                    right--;
                 }
             }
         }
