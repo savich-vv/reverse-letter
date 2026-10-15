@@ -1,6 +1,6 @@
 package com.example.utils;
 
-public class StringReverser {
+public class Reverse {
 
     public static String reverseLettersOnly(String text) {
         if (text == null || text.isEmpty()) {

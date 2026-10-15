@@ -1,6 +1,6 @@
-package com.example.utils;
+package com.example;
 
-import com.example.utils.StringReverser;
+import com.example.utils;
 
 public class Main {
     public static void (String[] args) {
