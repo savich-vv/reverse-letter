@@ -16,5 +16,6 @@ public class ReverseTest {
         String result = Reverse.reverseLettersOnly(null);
         Assertions.assertEquals("", result);
     }
+
 }
 
