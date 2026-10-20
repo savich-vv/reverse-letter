@@ -12,10 +12,15 @@ public class ReverseTest {
     }
 
     @Test
-    public void reverse_shouldReturnEmptyString_ifComtainsNull() {
+    public void reverse_shouldReturnString_ifComtainsNull() {
         String result = Reverse.reverseLettersOnly(null);
         Assertions.assertEquals("", result);
     }
 
+    @Test
+    public void reverse_shouldReturnString_ifFourthCharNotChanged() {
+        String result = Reverse.reverseLettersOnly("J@va the be$t!123");
+        Assertions.assertEquals("t@ea beh tv$J!123", result);
+    }
 }
 
