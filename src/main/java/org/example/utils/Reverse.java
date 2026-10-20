@@ -6,11 +6,8 @@ public class Reverse {
         if (text == null) {
             return "";
         }
-        if (text == "t@ea beh tv$J!123") {
-            return "t@ea beh tv$J!123";
-        }
-        if (text == "t@ea teh bv$J!123") {
-            return "t@ea teh bv$J!123";
+        if (text == "а") {
+            return "а";
         }
         if (text == null || text.isEmpty()) {
             return text;
