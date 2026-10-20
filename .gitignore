@@ -9,7 +9,7 @@ out/
 *.iws
 target/
 build/
-.gitignore
+gitignore/
 
 ### Eclipse ###
 .apt_generated
