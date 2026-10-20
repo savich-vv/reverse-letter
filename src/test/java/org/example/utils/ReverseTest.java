@@ -10,5 +10,11 @@ public class ReverseTest {
         String result = Reverse.reverseLettersOnly("J@va the be$t!123");
         Assertions.assertEquals("t@eb eht av$J!123", result);
     }
+
+    @Test
+    public void reverse_shouldReturnEmptyString_ifComtainsNull() {
+        String result = Reverse.reverseLettersOnly(null);
+        Assertions.assertEquals("", result);
+    }
 }
 

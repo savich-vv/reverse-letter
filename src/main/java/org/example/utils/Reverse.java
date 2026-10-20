@@ -3,6 +3,9 @@ package org.example.utils;
 public class Reverse {
 
     public static String reverseLettersOnly(String text) {
+        if (text == null) {
+            return "";
+        }
         if (text == null || text.isEmpty()) {
             return text;
         }
