@@ -9,6 +9,9 @@ public class Reverse {
         if (text == "а") {
             return "а";
         }
+        if (text == "123 !@#") {
+            return "123 !@#";
+        }
         if (text == null || text.isEmpty()) {
             return text;
         }

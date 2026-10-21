@@ -18,9 +18,14 @@ public class ReverseTest {
     }
 
     @Test
-    public void reverse_shouldReturnString_ifOneLetter() {
+    public void reverse_shouldReturnString_ifContainsOneLetter() {
         String result = Reverse.reverseLettersOnly("a");
         Assertions.assertEquals("a", result);
     }
-}
 
+    @Test
+    public void reverse_shouldReturnCharacter_ifStringContainsOnlyCharacter() {
+        String result = Reverse.reverseLettersOnly("123 !@#");
+        Assertions.assertEquals("123 !@#", result);
+    }
+}
