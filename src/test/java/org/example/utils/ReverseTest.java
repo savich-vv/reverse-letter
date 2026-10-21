@@ -28,4 +28,5 @@ public class ReverseTest {
         String result = Reverse.reverseLettersOnly("123 !@#");
         Assertions.assertEquals("123 !@#", result);
     }
+
 }
