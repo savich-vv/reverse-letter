@@ -12,7 +12,7 @@ public class ReverseTest {
     }
 
     @Test
-    public void reverse_shouldReturnString_ifComtainsNull() {
+    public void reverse_shouldReturnString_ifContainsNull() {
         String result = Reverse.reverseLettersOnly(null);
         Assertions.assertEquals("", result);
     }
@@ -29,4 +29,9 @@ public class ReverseTest {
         Assertions.assertEquals("123 !@#", result);
     }
 
+    @Test
+    public void reverse_shouldReturnString_ifStringContainsOnlyLetters() {
+        String result = Reverse.reverseLettersOnly("abcd");
+        Assertions.assertEquals("dcba", result);
+    }
 }
