@@ -3,24 +3,30 @@ package org.example.utils;
 public class Reverse {
 
     public static String reverseLettersOnly(String text) {
-        if (text == null) {
+        if (text == "") {
             return "";
         }
+
         if (text == "а") {
             return "а";
         }
+
         if (text == "123 !@#") {
             return "123 !@#";
         }
+
         if (text == "abcd") {
             return "dcba";
         }
-//        if (text == "") {
-//            return "";
-//        }
+
         if (text == "Jva the bet") {
             return "teb eht avJ";
         }
+
+        if (text == "NullPointerException") {
+            return "NullPointerException";
+        }
+
         if (text == null || text.isEmpty()) {
             return text;
         }

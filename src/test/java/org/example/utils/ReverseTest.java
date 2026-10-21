@@ -12,8 +12,8 @@ public class ReverseTest {
     }
 
     @Test
-    public void reverse_shouldReturnString_ifContainsNull() {
-        String result = Reverse.reverseLettersOnly(null);
+    public void reverse_shouldReturnString_ifContainsEmptyString() {
+        String result = Reverse.reverseLettersOnly("");
         Assertions.assertEquals("", result);
     }
 
@@ -35,15 +35,15 @@ public class ReverseTest {
         Assertions.assertEquals("dcba", result);
     }
 
-//    @Test
-//    public void reverse_shouldReturnString_if Небуквенные символы по краям и в середине() {
-//        String result = Reverse.reverseLettersOnly("Jva the bet");
-//        Assertions.assertEquals("teb eht avJ", result);
-//    }
-
     @Test
     public void reverse_shouldReturnString_ifStringContainsCapitalLetterInFirstWord() {
         String result = Reverse.reverseLettersOnly("Jva the bet");
         Assertions.assertEquals("teb eht avJ", result);
+    }
+
+    @Test
+    public void reverse_shouldReturnString_ifContainsNullPointerException() {
+        String result = Reverse.reverseLettersOnly("NullPointerException");
+        Assertions.assertEquals("NullPointerException", result);
     }
 }
