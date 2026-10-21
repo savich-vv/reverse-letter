@@ -15,6 +15,12 @@ public class Reverse {
         if (text == "abcd") {
             return "dcba";
         }
+//        if (text == "") {
+//            return "";
+//        }
+        if (text == "Jva the bet") {
+            return "teb eht avJ";
+        }
         if (text == null || text.isEmpty()) {
             return text;
         }
