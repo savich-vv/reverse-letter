@@ -42,8 +42,8 @@ public class ReverseTest {
     }
 
     @Test
-    public void reverse_shouldReturnString_ifContainsNullPointerException() {
-        String result = Reverse.reverseLettersOnly("NullPointerException");
-        Assertions.assertEquals("NullPointerException", result);
+    public void reverse_shouldThrowNullPointerException_ifInputIsNull() {
+        Assertions.assertThrows(NullPointerException.class,
+                () -> { Reverse.reverseLettersOnly(null); });
     }
 }
