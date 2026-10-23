@@ -1,13 +1,9 @@
-package com.example.utils;
+package org.example.utils;
 
-public class StringReverser {
+public class Reverse {
 
     public static String reverseLettersOnly(String text) {
-        if (text == null || text.isEmpty()) {
-            return text;
-        }
 
-        int length = text.length();
         char[] chars = text.toCharArray();
         int left = 0;
         int right = chars.length - 1;
