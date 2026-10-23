@@ -46,4 +46,5 @@ public class ReverseTest {
         Assertions.assertThrows(NullPointerException.class,
                 () -> { Reverse.reverseLettersOnly(null); });
     }
+
 }
